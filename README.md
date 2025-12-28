@@ -22,6 +22,8 @@ This project detects fraudulent financial transactions using Machine Learning.
 The dataset is not included due to GitHub file size limits.
 Please download it separately and place it in the project root.
 
+link - https://www.kaggle.com/datasets/amanalisiddiqui/fraud-detection-dataset
+
 ## How to Run
 ```bash
 pip install -r requirements.txt
