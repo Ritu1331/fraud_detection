@@ -4,7 +4,7 @@ This project detects fraudulent financial transactions using Machine Learning.
 
 ## Web Application Preview
 
-![Fraud Detection App](assets/app_screenshot.png)
+![Fraud Detection App](Assets/app_screenshot.png)
 
 
 ## Features
