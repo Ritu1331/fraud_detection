@@ -19,11 +19,30 @@ amount = st.number_input("Amount", min_value=0.0, step=0.01 , value = 1000.0)
 
 oldbalanceOrg = st.number_input("Old Balance of Origin Account(sender)", min_value=0.0, step=0.01, value = 10000.0)
 
-newbalanceOrig = st.number_input("New Balance of Origin Account(sender)", min_value=0.0, step=0.01, value = 8000.0)
+newbalanceOrig = oldbalanceOrg - amount
+if newbalanceOrig < 0:
+    newbalanceOrig = 0.0
 
-oldbalanceDest = st.number_input("Old Balance of Destination Account(receiver)", min_value=0.0, step=0.01, value = 5000.0)
+st.number_input(
+    "New Balance of Origin Account (sender)",
+    value=newbalanceOrig,
+    disabled=True
+)
 
-newbalanceDest = st.number_input("New Balance of Destination Account(receiver)", min_value=0.0, step=0.01, value = 7000.0)
+oldbalanceDest = st.number_input(
+    "Old Balance of Destination Account (receiver)",
+    min_value=0.0,
+    step=0.01,
+    value=5000.0
+)
+
+newbalanceDest = oldbalanceDest + amount
+
+st.number_input(
+    "New Balance of Destination Account (receiver)",
+    value=newbalanceDest,
+    disabled=True
+)
 
 
 if st.button("Predict"):
