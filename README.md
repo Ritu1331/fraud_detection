@@ -2,6 +2,11 @@
 
 This project detects fraudulent financial transactions using Machine Learning.
 
+## Web Application Preview
+
+![Fraud Detection App](assets/app_screenshot.png)
+
+
 ## Features
 - Logistic Regression with class balancing
 - Transaction behavior analysis
